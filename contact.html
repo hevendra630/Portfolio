@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <META http-equiv="Refresh" content="100">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Portfolio</title>
+  <style>
+    *{ margin: 0; padding: 0;}
+    body{
+      background-color: black;
+      color: white;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    nav{
+      display: flex;
+      border-radius: 5px;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(78, 77, 84);
+    }
+    nav ul{
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li{
+      list-style: none;
+      margin: 0 23px;
+    }
+    nav ul li a{
+      display: inline-block;
+      color: black;
+      transition: transform 0.2s;
+    }
+    nav ul li a:hover{
+      color:rgba(230, 230, 250, 0.829);
+      transform: scale(1.5);
+    }
+    .LEFT{
+      font-size: 2rem;
+    }
+    .hero-section {
+      display: flex;
+      justify-content: space-around;
+      margin: 130px 0 30px 0;
+      background-color: black;
+    }
+    .hero-section > div{
+      width: 30%;
+    }
+    .intro {
+      padding-top: 70px;
+      font-size: 2.3rem;
+      letter-spacing: 1.3px;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: #c8c8c8;
+      margin: 12px 0 18px 0;
+    }
+    .profile-img {
+      height: 100%;
+      width: 70%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      margin-top: 6px;
+    }
+    .contact-section {
+      max-width: 80vw;
+      margin: 0 auto 30px auto;
+      padding-top: 14px;
+    }
+    .section-title {
+      color: #5c1cdc;
+      margin-bottom: 14px;
+      font-size: 1.3rem;
+      letter-spacing: 0.8px;
+    }
+    .contact-info {
+      color: #f0f0f0;
+      font-size: 1.13rem;
+      line-height: 1.8;
+      background: #151519;
+      border-radius: 10px;
+      box-shadow: 0 2px 16px rgba(182,13,238,.08);
+      padding: 30px;
+      margin-bottom: 30px;
+      margin-top: 14px;
+    }
+    .contact-info a {
+      color: #ffe94d;
+      text-decoration: underline;
+      transition: color 0.2s;
+      word-break: break-all;
+    }
+    .contact-info a:hover {
+      color: #b60dee;
+    }
+    .contact-form {
+      margin-top: 18px;
+      background: #1d1a22;
+      border-radius: 10px;
+      padding: 22px 30px 18px 30px;
+      max-width: 540px;
+      box-shadow: 0 2px 13px rgba(182,13,238, .07);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      margin-bottom: 14px;
+      padding: 10px 12px;
+      border-radius: 6px;
+      border: 1px solid #2a2140;
+      background: #23202a;
+      color: #fff;
+      font-size: 1.05rem;
+      resize: none;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: 2px solid #b60dee;
+      border-color: #b60dee;
+    }
+    .contact-form button{
+      margin-top: 4px;
+      border: none;
+      color: white;
+      background-color: rgb(47, 47, 170);
+      padding: 10px 20px;
+      border-radius: 9px;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 2px 2px 3px rgb(219, 205, 205);
+      transition: transform 0.2s;
+    }
+    .contact-form button:hover{
+      transform: scale(1.08);
+      background: #3d0466;
+    }
+    .footer{
+      position: relative;
+      top: 45px;
+      display: flex;
+      height: 110px;
+      background-color: rgb(104, 85, 85);
+      align-items: center;
+      padding-left: 24px;
+      margin-top: 32px;
+    }
+    .first-footer{
+      margin-left: 10px;
+      color: black;
+      font-size: 28px;
+    }
+    .second-footer{
+         margin-left: 400px;
+      display: flex;
+      color: black;
+    }
+    .second-footer ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+    .second-footer a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.03rem;
+      transition: color 0.2s;
+    }
+    .second-footer a:hover {
+      color: #ffe94d;
+    }
+    button{
+      margin-top: 24px;
+      margin-right: 16px;
+      border: none;
+      color: white;
+      background-color: rgb(47, 47, 170);
+      padding: 7px 17px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 2px 2px 3px rgb(219, 205, 205);
+      transition: transform 0.2s;
+    }
+    button:hover{
+      transform: scale(1.12);
+      background: #3d0466;
+    }
+    button a{
+      text-decoration: none;
+      color: aliceblue;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .image{
+      border-radius: 30%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="LEFT"> <span style="color:#b60dee">Hevendra's</span>  Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about_me.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- HERO/INTRO SECTION IDENTICAL TO YOUR THEME -->
+    <section class="hero-section" id="contact-hero">
+      <div class="intro">
+        Contact
+        <div class="subtitle">
+          <span id="element"></span>
+        </div>
+        <div style="font-size:1.08rem; color:#e0c1ff; margin-bottom:10px;">
+          Let's connect and start something exciting together!
+        </div>
+        <button><a href="resume.html">Resume</a></button>
+        <button><a href="https://github.com/hevendra630">GitHub</a></button>
+      </div>
+      <div class="rightsection">
+        <img class="profile-img" src="image2.jpg" alt="Profile Image">
+      </div>
+    </section>
+    <!-- CONTACT DETAILS & FORM -->
+    <section class="contact-section">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-info">
+        For collaborations or inquiries, feel free to reach out:<br><br>
+        <strong>Email:</strong> <a href="mailto:hevendra_bage@srmap.edu.in">hevendra_bage@srm.ap.edu.in</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/hevendra630">YourGitHub</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hevendra-bage-19682a291/?originalSubdomain=in">LinkedIn Profile</a><br>
+      </div>
+      <div class="contact-form">  (including this Feature soon)
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <hr>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="first-footer">hevendra's Portfolio</div>
+      <div class="second-footer">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about_me.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- Typed.js effect for hero section subtitle -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+        'Let\'s Connect!',
+        'Get in Touch',
+        'Start a Project Today',
+        'Open for Collaboration'
+      ],
+      typeSpeed: 32,
+      backSpeed: 18,
+      loop: true
+    });
+  </script>
+</body>
+</html>

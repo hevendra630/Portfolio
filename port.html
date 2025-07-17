@@ -1,0 +1,309 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <META http-equiv="Refresh" content="100">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PORTFOLIO</title>
+  <style>
+    *{                          /* its an universal  selector       */
+      margin: 0;
+      padding: 0;
+
+
+    }
+    body{
+  background-color:black;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color:rgb(78, 77, 84);
+
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+nav ul li{
+  list-style: none;
+  margin: 0 23px;
+  
+}
+nav ul li a{
+  display: inline-block;
+  color:black;
+  transition : transform 0.2s;
+  
+}
+ul li a{
+  display: inline-block;
+  color:black;
+  transition : transform 0.2s;
+  padding-bottom: 10px;
+}
+nav ul li a:hover{
+  color:rgba(230, 230, 250, 0.829);
+ transform: scale(1.5);
+
+}
+ul li a:hover{
+  color:rgba(230, 230, 250, 0.829);
+ transform: scale(1.5);
+
+}
+.LEFT{
+  font-size: 2rem;
+}
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  margin: 150px 0;
+  background-color: black;
+}
+.firstsection > div{
+  width: 30%;
+ 
+ 
+}
+.leftsection{
+padding-top: 100px;
+  font-size: 3rem;
+}
+.rightsection img{
+ height: 100%;
+ width:70%;
+ border-radius: 50%;
+ 
+ margin-bottom: 10px;
+}
+#element{
+   color: rgb(182, 13, 238);
+   animation: orbit 2.7s;
+}
+.secondsection{
+  max-width: 80vw;
+}
+main hr{
+  
+  background-color:rgb(249, 237, 11);
+  height: 2px;
+  margin: 10px 80px 20px 80px;
+  
+ 
+  
+}
+.secondsection .box{
+ 
+  background-color: white;
+  width: 80vw;
+  height: 2px;
+ margin-top: 60px;
+ margin-left: 150px;
+ display:flex;
+ justify-content: space-around;
+ 
+  
+}
+
+.secondsection .vertical{
+  
+  height: 60px;
+  width: 1px;
+  background-color: white;
+  margin-left: -90px;
+  
+
+}
+.secondsection img{
+  width: 23px;
+  position: relative;
+  top: -40px;
+  right: 10px;
+}
+.vertical-title{
+  position: relative;
+  top: 35px;
+  width: 180px;
+
+}
+.vertical-desc{
+  position: relative;
+  top: 50px;
+  width: 150px;
+  color: grey;
+  size: 9px;
+
+}
+.footer{
+  position: relative;
+  top: 300px;
+bottom: 2px;
+display: flex;
+height: 150px;
+  background-color: rgb(104, 85, 85);
+  height: 150px;
+ 
+
+
+}
+.first-footer{
+ margin-left: 30px;
+  padding-top: 10px;
+  color: black;
+  font-size: 30px;
+  
+  
+}
+.second-footer{
+  margin-left: 300px;
+  margin-top:20px;
+  display: flex;
+  color: black;
+  right:100px;
+
+}
+a{
+  text-decoration: none;
+}
+button{
+  margin-top: 60px;
+  margin-left: 30px;
+  border-color: white;
+  color: white;
+  background-color: rgb(47, 47, 170);
+  padding: 2px 4px 2px 4px;
+  box-shadow: 2px 2px 2`px rgb(219, 205, 205);
+
+}
+button{
+  transition: transform 0.5s, ease-in-out 0.5s ease-in-out;
+
+}
+button:hover{
+  transform: scale(1.5,1);
+}
+
+button a{
+  text-decoration: none;
+  color: aliceblue;
+  transition: transform 0.5s, ease-in-out;
+}
+.image{
+  border-radius:30%;
+}
+
+
+  </style>
+</head>
+<body>
+  <HEADER>
+    <NAV>
+      <div CLASS="LEFT"> Hevendra's Portfolio</div>
+      <DIV class="right">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_me.html">About me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+          </ul>
+      </DIV>
+    </NAV>
+  </HEADER>
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        HI, this is <span style="color:rgb(182, 13, 238)">Hevendra</span>
+        <div>im a passionate </div>
+        <span id="element"></span>
+        <div>
+          <button><a href="resume.html">My Resume</a></button>
+        <button><a href="https://github.com/hevendra630">My gitHub</a></button>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img src="image2.jpg" alt="" >
+      </div>
+    </section>
+    <hr>
+    <section class="secondsection">
+      <p <SPAN style="padding-left: 100PX ; opacity:0.5;">My journey so far</p>
+      <h1 <SPAN style="padding-left: 100PX;">Past Experience</h1>
+      <div class="box">
+          <div class="vertical">
+           <img class="image" src="html.png">
+            <div class="vertical-title">
+              html,CSS(2023-24)
+            </div>
+            <div class="vertical-desc">
+            As an HTML & CSS Developer (2022–25), I built responsive and accessible web pages using semantic HTML5 and modern CSS3, ensuring visual consistency and optimal user experience across devices.
+
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image" src="js.png">
+             <div class="vertical-title">
+               Java Script(2023-24)
+             </div>
+             <div class="vertical-desc">
+             As a JavaScript Developer (2022–25), I developed dynamic and interactive web applications using modern JavaScript features, delivering seamless user experiences and efficient functionality across devices.
+ 
+             </div>
+           </div>
+           <div class="vertical">
+            <img class="image" src="php_logo.jpg">
+             <div class="vertical-title">
+               PHP - Backend(2024-25)
+             </div>
+             <div class="vertical-desc">
+             As a PHP Developer (2022–25), I built robust and scalable backend systems using PHP, integrating databases and developing secure APIs to ensure smooth data flow and reliable web solutions.
+ 
+             </div>
+           </div>
+           <div class="vertical">
+            <img class="image" src="react_js.png">
+             <div class="vertical-title">
+               React Js(2024-25)
+             </div>
+             <div class="vertical-desc">
+             As a React.js Developer (2022–25), I created dynamic and responsive user interfaces using React.js, designing reusable components and leveraging modern features to enhance performance and scalability.
+ 
+             </div>
+           </div>
+           
+          </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="first-footer">Hevendra's Developer portfolio</div>
+      <div class="second-footer">
+        <ul type="none">
+          <li><a style="text-decoration:none"    href="home.html">Home</a></li>
+          <li><a style="text-decoration:none"    href="about_me.html">About me</a></li>
+          <li><a style="text-decoration:none"    href="projects.html">Projects</a></li>
+          <li><a style="text-decoration:none"    href="contact.html">Contact me</a></li>
+        </ul>
+
+      </div>
+     
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   
+   
+
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Data Scientist','Programmer','Graphic Designer'],
+        typeSpeed: 30,
+      });
+    
+    </script>
+  </body>
+</body>
+</html>

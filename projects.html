@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <META http-equiv="Refresh" content="100">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Portfolio</title>
+  <style>
+    *{ margin: 0; padding: 0; }
+    body{
+      background-color: black;
+      color: white;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    nav{
+      display: flex;
+      border-radius: 5px;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(78, 77, 84);
+    }
+    nav ul{
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li{
+      list-style: none;
+      margin: 0 23px;
+    }
+    nav ul li a{
+      display: inline-block;
+      color: black;
+      transition: transform 0.2s;
+    }
+    nav ul li a:hover{
+      color:rgba(230, 230, 250, 0.829);
+      transform: scale(1.5);
+    }
+    .LEFT{
+      font-size: 2rem;
+    }
+    .hero-section {
+      display: flex;
+      justify-content: space-around;
+      margin: 130px 0 30px 0;
+      background-color: black;
+    }
+    .hero-section > div{
+      width: 30%;
+    }
+    .intro {
+      padding-top: 70px;
+      font-size: 2.3rem;
+      letter-spacing: 1.3px;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: #c8c8c8;
+      margin: 12px 0 18px 0;
+    }
+    .profile-img {
+      height: 100%;
+      width: 70%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      margin-top: 6px;
+    }
+    .projects-section {
+      max-width: 80vw;
+      margin: 0 auto 30px auto;
+      padding-top: 14px;
+    }
+    .section-title {
+      color: #ffe94d;
+      margin-bottom: 14px;
+      font-size: 1.3rem;
+      letter-spacing: 0.8px;
+    }
+    .project-category {
+      color: #ffb03a;
+      margin: 28px 0 14px 0;
+      font-size: 1.12rem;
+      font-weight: 600;
+    }
+    .projects-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 27px;
+      margin-bottom: 10px;
+    }
+    .project-card {
+      background: #202020;
+      border-radius: 10px;
+      padding: 18px;
+      color: #f6f6f6;
+      min-width: 250px;
+      width: 315px;
+      box-shadow: 0 3px 12px rgba(182, 13, 238, 0.11);
+      margin-bottom: 12px;
+    }
+    .project-title {
+      font-size: 1.09rem;
+      color: #b60dee;
+      margin-bottom: 3px;
+      font-weight: 600;
+    }
+    .project-tech {
+      font-size: 0.98rem;
+      color: #9494ee;
+      margin-bottom: 7px;
+    }
+    .project-link a {
+      color: #ffe94d;
+      text-decoration: underline;
+      font-size: 0.95rem;
+    }
+    .footer{
+      position: relative;
+      top: 45px;
+      display: flex;
+      height: 110px;
+      background-color: rgb(104, 85, 85);
+      align-items: center;
+      padding-left: 24px;
+      margin-top: 32px;
+    }
+    .first-footer{
+      margin-left: 10px;
+      color: black;
+      font-size: 28px;
+    }
+    .second-footer{
+      margin-left: 400px;
+      display: flex;
+      color: black;
+    }
+    .second-footer ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+    .second-footer a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.03rem;
+      transition: color 0.2s;
+    }
+    .second-footer a:hover {
+      color: #ffe94d;
+    }
+    button{
+      margin-top: 24px;
+      margin-right: 16px;
+      border: none;
+      color: white;
+      background-color: rgb(47, 47, 170);
+      padding: 7px 17px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 2px 2px 3px rgb(219, 205, 205);
+      transition: transform 0.2s;
+    }
+    button:hover{
+      transform: scale(1.12);
+      background: #3d0466;
+    }
+    button a{
+      text-decoration: none;
+      color: aliceblue;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .image{
+      border-radius: 30%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="LEFT"> <span style="color:#9494ee">Hevendra's </span>Portfolio</div>
+      <div class="right">
+        <ul>
+           <li><a href="home.html">Home</a></li>
+          <li><a href="about_me.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- HERO/INTRO SECTION -->
+    <section class="hero-section" id="projects-hero">
+      <div class="intro">
+        Projects
+        <div class="subtitle">
+          <span id="element"></span>
+        </div>
+        <div style="font-size:1.08rem; color:#e0c1ff; margin-bottom:10px;">
+          A collection of web apps, games, and advanced developments.
+        </div>
+        <button><a href="resume.html">Resume</a></button>
+        <button><a href="https://github.com/hevendra630">GitHub</a></button>
+      </div>
+      <div class="rightsection">
+        <img class="profile-img" src="image2.jpg" alt="Profile Image">
+      </div>
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section">
+      <h2 class="section-title">My Projects</h2>
+      <div class="project-category">Easy Projects</div>
+      <div class="projects-list">
+        <div class="project-card">
+          <div class="project-title">To-Do List Website</div>
+          <div class="project-tech">HTML, CSS, JavaScript</div>
+          <div>
+            Task management web app with add, complete, and delete functionality, focused on simplicity and usability.
+            <!-- <div class="project-link"><a href="#">View Project</a></div> -->
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Rock Paper Scissors Game</div>
+          <div class="project-tech">HTML, CSS, JavaScript</div>
+          <div>
+            Classic player vs. computer game with responsive UI and instant results, perfect for learning basic logic and DOM.
+            <!-- <div class="project-link"><a href="#">View Project</a></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="project-category">Advanced Projects</div>
+      <div class="projects-list">
+        <div class="project-card">
+          <div class="project-title">E-Commerce Website</div>
+          <div class="project-tech">React.js, PHP, MySQL</div>
+          <div>
+            Full-featured e-commerce platform with product catalog, secure authentication, cart, and checkout functionality.
+            <!-- <div class="project-link"><a href="#">View Project</a></div> -->
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Quiz Builder</div>
+          <div class="project-tech">JavaScript, React.js, PHP</div>
+          <div>
+            Interactive tool for creating, editing, and organizing quizzes; includes automated scoring and real-time feedback.
+            <!-- <div class="project-link"><a href="#">View Project</a></div> -->
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="first-footer">Developer Portfolio</div>
+      <div class="second-footer">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about_me.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+        'Web Apps & Utilities',
+        'Mini Games',
+        'Full-Stack Projects',
+        'Learning by Building'
+      ],
+      typeSpeed: 32,
+      backSpeed: 18,
+      loop: true
+    });
+  </script>
+</body>
+</html>

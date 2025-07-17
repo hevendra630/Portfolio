@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <META http-equiv="Refresh" content="100">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Portfolio</title>
+  <style>
+    *{ margin: 0; padding: 0;}
+    body{
+      background-color: black;
+      color: white;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    nav{
+      display: flex;
+      border-radius: 5px;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(78, 77, 84);
+    }
+    nav ul{
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li{
+      list-style: none;
+      margin: 0 23px;
+    }
+    nav ul li a{
+      display: inline-block;
+      color: black;
+      transition: transform 0.2s;
+    }
+    nav ul li a:hover{
+      color:rgba(230, 230, 250, 0.829);
+      transform: scale(1.5);
+    }
+    .LEFT{
+      font-size: 2rem;
+    }
+    .hero-section {
+      display: flex;
+      justify-content: space-around;
+      margin: 130px 0 30px 0;
+      background-color: black;
+    }
+    .hero-section > div{
+      width: 30%;
+    }
+    .intro {
+      padding-top: 70px;
+      font-size: 2.4rem;
+      letter-spacing: 1.5px;
+    }
+    .subtitle {
+      font-size: 1.07rem;
+      color: #c8c8c8;
+      margin: 14px 0 16px 0;
+    }
+    .profile-img {
+      height: 100%;
+      width: 70%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      margin-top: 6px;
+    }
+    main hr{
+      background-color: rgb(249, 237, 11);
+      height: 2px;
+      margin: 10px 80px 20px 80px;
+    }
+    .about-section, .achievements-section, .interests-section, .contact-section {
+      max-width: 80vw;
+      margin: 0 auto 30px auto;
+      padding-top: 14px;
+    }
+    .section-title {
+      color: #fbfbfb;
+      margin-bottom: 16px;
+      letter-spacing: 0.8px;
+      font-size: 1.32rem;
+      text-decoration: underline;
+    }
+    .about-text {
+      color: #e6e6e6;
+      font-size: 1.09rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    .bio-details-list {
+      color: #f3eabf;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin: 0 0 14px 22px;
+      list-style: disc inside;
+    }
+    .achievements-list,
+    .interests-list {
+      color: #dab6ff;
+      font-size: 1.04rem;
+      margin-left: 22px;
+      list-style: circle inside;
+      margin-bottom: 12px;
+    }
+    .footer{
+      position: relative;
+      top: 45px;
+      display: flex;
+      height: 110px;
+      background-color: rgb(104, 85, 85);
+      align-items: center;
+      padding-left: 24px;
+      margin-top: 32px;
+    }
+    .first-footer{
+      margin-left: 10px;
+      color: black;
+      font-size: 28px;
+    }
+    .second-footer{
+         margin-left: 400px;
+      display: flex;
+      color: black;
+    }
+    .second-footer ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+    .second-footer a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.03rem;
+      transition: color 0.2s;
+    }
+    .second-footer a:hover {
+      color: #ffe94d;
+    }
+    button{
+      margin-top: 24px;
+      margin-right: 16px;
+      border: none;
+      color: white;
+      background-color: rgb(47, 47, 170);
+      padding: 7px 17px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 2px 2px 3px rgb(219, 205, 205);
+      transition: transform 0.2s;
+    }
+    button:hover{
+      transform: scale(1.12);
+      background: #3d0466;
+    }
+    button a{
+      text-decoration: none;
+      color: aliceblue;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .image{
+      border-radius: 30%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="LEFT"> <span style="color:#b60dee">Hevendra's</span>  Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about_me.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- HERO/INTRO SECTION SAME AS YOUR LAYOUT -->
+    <section class="hero-section" id="about-main">
+      <div class="intro">
+        About Me
+        <div class="subtitle">
+          <span id="element"></span>
+        </div>
+        <div style="font-size:1.08rem; color:#e0c1ff; margin-bottom:10px;">
+          Enthusiastic about building digital solutions & learning new technologies every day.
+        </div>
+        <button><a href="resume.html">Resume</a></button>
+        <button><a href="https://github.com/">GitHub</a></button>
+      </div>
+      <div class="rightsection">
+        <img class="profile-img" src="image2.jpg" alt="Profile Image">
+      </div>
+    </section>
+    <!-- ABOUT/BIOGRAPHY SECTION -->
+    <section class="about-section">
+      <h2 class="section-title">Biography</h2>
+      <div class="about-text">
+        Experienced in designing and developing interactive web applications, scalable backend systems, and machine learning solutions. Dedicated to delivering clean code and impactful user experiences. Committed to lifelong learning and creative problem solving in tech.
+      </div>
+      <ul class="bio-details-list">
+        <li>Experienced with full stack web development</li>
+        <li>Comfortable in both individual and collaborative projects</li>
+        <li>Focused on usability, performance, and accessibility</li>
+        <li>Adept at applying modern frameworks and tools</li>
+      </ul>
+    </section>
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements-section">
+      <h2 class="section-title">Achievements</h2>
+      <ul class="achievements-list">
+        <li>Built and deployed end-to-end web applications</li>
+        <li>Created machine learning models for real datasets</li>
+        <li>Contributed to open-source and group coding projects</li>
+      </ul>
+    </section>
+    <!-- INTERESTS -->
+    <section class="interests-section">
+      <h2 class="section-title">Interests</h2>
+      <ul class="interests-list">
+        <li>Web and app development</li>
+        <li>Machine learning and AI</li>
+        <li>UI/UX and digital creativity</li>
+        <li>Continuous learning & problem solving</li>
+      </ul>
+    </section>
+    <!-- CONTACT -->
+   <section class="contact-section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-info">
+        For professional inquiries or collaboration:<br><br>
+        <strong>Email:</strong> <a href="mailto:hevendra_bage@srmap.edu.in" style="color:#ffe94d;">hevendra_bage@srmap.edu.in</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/hevendra630" style="color:#b60dee;">MyGitHub</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hevendra-bage-19682a291/?originalSubdomain=in" style="color:#b60dee;"> My LinkedIn Profile</a>
+      </div>
+    </section>
+    <hr>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="first-footer">Developer Portfolio</div>
+      <div class="second-footer">
+        <ul>
+           <li><a href="home.html">Home</a></li>
+          <li><a href="about_me.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- Typed.js effect for hero section subtitle -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+        'Full Stack Developer',
+        'Machine Learning Enthusiast',
+        'Problem Solver',
+        'Lifelong Learner'
+      ],
+      typeSpeed: 32,
+      backSpeed: 18,
+      loop: true
+    });
+  </script>
+</body>
+</html>
